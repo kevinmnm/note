@@ -1,0 +1,70 @@
+body{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+	font-family: 'Nunito', sans-serif;
+    background: #101010;
+    color: white;
+    text-underline-position: under;
+    text-align: center;
+    text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black;
+}
+
+.par{
+	position: relative;
+    width: 70%;
+    color: grey;
+    margin: auto;
+    cursor: default;
+}.par:hover{color:white;}
+
+.des{
+	color: grey;
+}
+
+pre{
+	position: relative;
+	width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: black;
+    box-shadow: 0 0 2px white;
+    padding: 15px;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    text-align: left;
+    font-size: 16px;
+}
+
+.file{
+	position: absolute;
+    top: 10px;
+    right: 10px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+}
+
+.order {
+	width: 90%;
+    margin: auto;
+    text-align: left;
+    cursor: default;
+}
+
+.js,.yellow{color:yellow;}
+.css,.skyBlue{color:skyBlue;}
+.html,.orange{color:orange;}
+.red{color:red;}
+.greenYellow{color:greenYellow;}
+.yellowGreen{color:yellowGren;}
+.lightGreen,.vue{color:lightGreen;}
+.violet{color:violet;}
+.pink{color:pink;}
+.shineBlue{color: #00d8ff;}
+.shineViolet{color: #ff3bfc;}
+
+
