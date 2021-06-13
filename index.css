@@ -137,6 +137,10 @@ code {
    color: #ff3bfc;
 }
 
+.brown {
+   color: rgb(179, 65, 65);
+}
+
 pre {
    font-size: 18px;
 }
@@ -195,6 +199,13 @@ pre {
 
 .var:hover {
    font-weight: bold;
+}
+
+.note {
+   padding: 5px;
+   border: 1px solid grey;
+   width: 90%;
+   margin: auto;
 }
 
 @keyframes shine-yellow {
