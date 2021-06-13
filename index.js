@@ -11,13 +11,14 @@ const customizer = (objArr) => {
       const elements = document.getElementsByClassName(current);
       [...elements].forEach(el => {
          el?.addEventListener('mouseenter', event => {
-            const position = event.target.getBoundingClientRect();
+            // const position = event.target.getBoundingClientRect();
             const tooltipEl = document.querySelector('.tool-tip');
             tooltipEl.innerHTML = '';
             tooltipEl.innerHTML = tooltip;
-            tooltipEl.style.top = position.top + 'px';
+            // tooltipEl.style.top = position.top + 'px';
+            tooltipEl.style.top = event.pageY - 10 + 'px';
             tooltipEl.style.left = event.clientX + 15 + 'px';
-            if (tooltip) { 
+            if (tooltip) {
                tooltipEl.style.display = 'block';
             }
          });
