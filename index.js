@@ -3,7 +3,8 @@
 const customizer = (objArr) => {
    objArr.forEach(obj => {
       const { current, replace } = obj;
-      document.body.innerHTML = document.body.innerHTML.replaceAll(current, replace);
+      const regex = new RegExp('\\b'+current+'\\b', 'g');
+      document.body.innerHTML = document.body.innerHTML.replaceAll(regex, replace);
    });
 
    objArr.forEach(obj => {
