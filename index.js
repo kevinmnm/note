@@ -46,6 +46,15 @@ const objArr = [
 
 customizer(objArr);
 
+const triggerPopupMsg = (msg) => {
+	const popupMsg = document.querySelector(".popup-msg");
+	popupMsg.innerHTML = msg;
+	popupMsg.style.display = "flex";
+	setTimeout(() => {
+		popupMsg.style.display = "none";
+	}, 2500);
+};
+
 const allPreTags = document.getElementsByTagName('pre');
 [...allPreTags].forEach( pre => {
    const copyEl = document.createElement('DIV');
